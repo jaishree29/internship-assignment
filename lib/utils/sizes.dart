@@ -45,6 +45,10 @@ class DSizes {
       screenWidth(context) * 0.38;
   static double smallContainerHeight(BuildContext context) =>
       screenWidth(context) * 0.14;
+  static double largeContainerWidth(BuildContext context) =>
+      screenWidth(context) * 0.38;
+  static double largeContainerHeight(BuildContext context) =>
+      screenHeight(context) * 0.38;
 
 
   // Button Sizes

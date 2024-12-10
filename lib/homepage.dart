@@ -1,3 +1,4 @@
+import 'package:e_comm_demo/ratings.dart';
 import 'package:e_comm_demo/utils/colors.dart';
 import 'package:e_comm_demo/utils/image_strings.dart';
 import 'package:e_comm_demo/utils/sizes.dart';
@@ -17,6 +18,17 @@ class Homapage extends StatelessWidget {
       DImages.dressImage_2,
       DImages.dressImage_3,
       DImages.dressImage_4
+    ];
+
+    final List<String> reviewImages = [
+      DImages.dressImage_2,
+      DImages.dressImage_3,
+      DImages.dressImage_5,
+      DImages.dressImage_6,
+      DImages.dressImage_7,
+      DImages.dressImage_8,
+      DImages.dressImage_9,
+      DImages.dressImage_10,
     ];
 
     final TextEditingController pincode = TextEditingController();
@@ -305,8 +317,106 @@ class Homapage extends StatelessWidget {
                   ),
                   SizedBox(height: DSizes.spaceBtwSections(context)),
                   const Divider(),
+                  Padding(
+                    padding: EdgeInsets.all(DSizes.largePadding(context)),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          'About the Product',
+                          style: GoogleFonts.poppins(
+                            fontSize: DSizes.fontSizeMd(context),
+                            color: Colors.black,
+                            fontWeight: FontWeight.w600,
+                          ),
+                        ),
+                        const Icon(
+                          Icons.keyboard_arrow_down_rounded,
+                          color: Colors.black,
+                        )
+                      ],
+                    ),
+                  ),
+                  const Divider(),
+                  Padding(
+                    padding: EdgeInsets.all(DSizes.largePadding(context)),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          'Wash Care Instructions',
+                          style: GoogleFonts.poppins(
+                            fontSize: DSizes.fontSizeMd(context),
+                            color: Colors.black,
+                            fontWeight: FontWeight.w600,
+                          ),
+                        ),
+                        const Icon(
+                          Icons.keyboard_arrow_down_rounded,
+                          color: Colors.black,
+                        )
+                      ],
+                    ),
+                  ),
+                  const Divider(),
+                  Padding(
+                    padding: EdgeInsets.all(DSizes.largePadding(context)),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          'Service & Policy',
+                          style: GoogleFonts.poppins(
+                            fontSize: DSizes.fontSizeMd(context),
+                            color: Colors.black,
+                            fontWeight: FontWeight.w600,
+                          ),
+                        ),
+                        const Icon(
+                          Icons.keyboard_arrow_down_rounded,
+                          color: Colors.black,
+                        )
+                      ],
+                    ),
+                  ),
+                  const Divider(),
                   SizedBox(height: DSizes.spaceBtwSections(context)),
-                  Column()
+                  const RatingsAndReviews(),
+                  SizedBox(height: DSizes.spaceBtwSections(context)),
+                  const Divider(),
+                  SizedBox(height: DSizes.spaceBtwSections(context)),
+                  Text(
+                    'Review Photos(150)',
+                    style: GoogleFonts.poppins(
+                      fontSize: DSizes.fontSizeMd(context),
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                  SizedBox(height: DSizes.spaceBtwSections(context)),
+                  SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+                      children: List.generate(reviewImages.length, (index) {
+                        return Padding(
+                          padding: EdgeInsets.only(
+                              right: DSizes.smallPadding(context)),
+                          child: SizedBox(
+                            width: DSizes.largeContainerWidth(context),
+                            height: DSizes.largeContainerWidth(context),
+                            child: ClipRRect(
+                              child: Image.asset(
+                                reviewImages[index],
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                          ),
+                        );
+                      }),
+                    ),
+                  ),
+                  SizedBox(height: DSizes.spaceBtwSections(context)),
+                  const Divider(),
+                  SizedBox(height: DSizes.spaceBtwSections(context)),
                 ],
               ),
             ),
