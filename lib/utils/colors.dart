@@ -6,4 +6,5 @@ class DColors {
   static const Color lgrey = Color(0xffF0F0F0);
   static const Color grey1 = Color(0xff535766);
   static const Color grey2 = Color(0xff9C9C9C);
+  static const Color grey3 = Color(0xffBDBDBD);
 }

@@ -14,7 +14,7 @@ class DImages {
   //icons images
   static const String arrowLeft = 'assets/icons/arrow-left.png';
   static const String bag = 'assets/icons/bag-04.png';
-  static const String bankNote = 'assets/icons/bank-note.png';
+  static const String bankNote = 'assets/icons/bank-note-03.png';
   static const String search = 'assets/icons/search-01.png';
   static const String truck = 'assets/icons/truck.png';
 }

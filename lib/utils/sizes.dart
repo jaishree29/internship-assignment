@@ -6,12 +6,18 @@ class DSizes {
   static double screenHeight(BuildContext context) =>
       MediaQuery.of(context).size.height;
 
+  //bottom bar
+  static double bottomBarHeight(BuildContext context) =>
+      screenHeight(context) * 0.08;
+
   // Padding and Margin Sizes
   static double xs(BuildContext context) => screenWidth(context) * 0.01;
   static double sm(BuildContext context) => screenWidth(context) * 0.02;
   static double md(BuildContext context) => screenWidth(context) * 0.04;
   static double lg(BuildContext context) => screenWidth(context) * 0.06;
   static double xl(BuildContext context) => screenWidth(context) * 0.08;
+  static double xxl(BuildContext context) => screenWidth(context) * 0.11;
+  static double xxxl(BuildContext context) => screenWidth(context) * 0.13;
 
   // Icon Sizes
   static double iconXs(BuildContext context) => screenWidth(context) * 0.03;
@@ -27,6 +33,19 @@ class DSizes {
       screenWidth(context) * 0.055;
   static double fontSizeXLg(BuildContext context) =>
       screenWidth(context) * 0.065;
+
+  // Text feild height and width
+  static double textFieldWidth(BuildContext context) =>
+      screenWidth(context) * 0.5;
+  static double textFieldHeight(BuildContext context) =>
+      screenWidth(context) * 0.15;
+
+  // Container height and width
+  static double smallContainerWidth(BuildContext context) =>
+      screenWidth(context) * 0.38;
+  static double smallContainerHeight(BuildContext context) =>
+      screenWidth(context) * 0.14;
+
 
   // Button Sizes
   static double buttonHeight(BuildContext context) =>
