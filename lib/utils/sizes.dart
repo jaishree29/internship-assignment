@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class LSizes {
+class DSizes {
   static double screenWidth(BuildContext context) =>
       MediaQuery.of(context).size.width;
   static double screenHeight(BuildContext context) =>
@@ -15,16 +15,18 @@ class LSizes {
 
   // Icon Sizes
   static double iconXs(BuildContext context) => screenWidth(context) * 0.03;
-  static double iconSm(BuildContext context) => screenWidth(context) * 0.04;
-  static double iconMd(BuildContext context) => screenWidth(context) * 0.06;
-  static double iconLg(BuildContext context) => screenWidth(context) * 0.08;
+  static double iconSm(BuildContext context) => screenWidth(context) * 0.05;
+  static double iconMd(BuildContext context) => screenWidth(context) * 0.07;
+  static double iconLg(BuildContext context) => screenWidth(context) * 0.09;
 
   // Font Sizes
   static double fontSizeSm(BuildContext context) =>
       screenWidth(context) * 0.035;
   static double fontSizeMd(BuildContext context) => screenWidth(context) * 0.04;
   static double fontSizeLg(BuildContext context) =>
-      screenWidth(context) * 0.045;
+      screenWidth(context) * 0.055;
+  static double fontSizeXLg(BuildContext context) =>
+      screenWidth(context) * 0.065;
 
   // Button Sizes
   static double buttonHeight(BuildContext context) =>
@@ -48,6 +50,10 @@ class LSizes {
       screenWidth(context) * 0.06;
   static double spaceBtwItems(BuildContext context) =>
       screenWidth(context) * 0.04;
+  static double smallSizedBoxWidth(BuildContext context) =>
+      screenWidth(context) * 0.035;
+  static double smallSizedBoxHeight(BuildContext context) =>
+      screenHeight(context) * 0.01;
   static double spaceBtwSections(BuildContext context) =>
       screenWidth(context) * 0.08;
 
@@ -58,6 +64,8 @@ class LSizes {
       screenWidth(context) * 0.02;
   static double borderRadiusLg(BuildContext context) =>
       screenWidth(context) * 0.03;
+  static double borderRadiusCircular(BuildContext context) =>
+      screenWidth(context) * 0.09;
 
   // Divider Height
   static double dividerHeight(BuildContext context) =>
@@ -91,7 +99,7 @@ class LSizes {
 
   // Image Carousel Height
   static double imageCarouselHeight(BuildContext context) =>
-      screenHeight(context) * 0.5;
+      screenHeight(context) * 0.52;
 
   // Loading Indicator Size
   static double loadingIndicatorSize(BuildContext context) =>
@@ -104,6 +112,8 @@ class LSizes {
   // Padding and Margin
   static double smallPadding(BuildContext context) =>
       screenWidth(context) * 0.02;
+  static double xsmallPadding(BuildContext context) =>
+      screenWidth(context) * 0.012;
   static double mediumPadding(BuildContext context) =>
       screenWidth(context) * 0.04;
   static double largePadding(BuildContext context) =>
