@@ -14,7 +14,7 @@ class RatingsAndReviews extends StatelessWidget {
   Widget build(BuildContext context) {
     List progressItems = [
       ProgressData(
-        progress: 0.85, 
+        progress: 0.85,
         icon: Icons.settings_ethernet_rounded,
         heading: 'Sizing',
         subHeading: 'True to Size',
@@ -53,9 +53,7 @@ class RatingsAndReviews extends StatelessWidget {
               ),
             ),
             GestureDetector(
-              onTap: () {
-                // Handle write a review action
-              },
+              onTap: () {},
               child: Text(
                 'Write a Review',
                 style: GoogleFonts.poppins(
