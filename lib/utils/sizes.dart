@@ -14,6 +14,7 @@ class DSizes {
   static double xs(BuildContext context) => screenWidth(context) * 0.01;
   static double sm(BuildContext context) => screenWidth(context) * 0.02;
   static double md(BuildContext context) => screenWidth(context) * 0.04;
+  static double sfont(BuildContext context) => screenWidth(context) * 0.027;
   static double lg(BuildContext context) => screenWidth(context) * 0.06;
   static double xl(BuildContext context) => screenWidth(context) * 0.08;
   static double xxl(BuildContext context) => screenWidth(context) * 0.11;

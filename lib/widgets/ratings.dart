@@ -15,7 +15,7 @@ class RatingsAndReviews extends StatelessWidget {
     List progressItems = [
       ProgressData(
         progress: 0.85, 
-        icon: Icons.compare_arrows_rounded,
+        icon: Icons.settings_ethernet_rounded,
         heading: 'Sizing',
         subHeading: 'True to Size',
       ),

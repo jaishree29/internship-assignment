@@ -1,4 +1,5 @@
-import 'package:e_comm_demo/ratings.dart';
+import 'package:e_comm_demo/widgets/customer_review.dart';
+import 'package:e_comm_demo/widgets/ratings.dart';
 import 'package:e_comm_demo/utils/colors.dart';
 import 'package:e_comm_demo/utils/image_strings.dart';
 import 'package:e_comm_demo/utils/sizes.dart';
@@ -417,6 +418,7 @@ class Homapage extends StatelessWidget {
                   SizedBox(height: DSizes.spaceBtwSections(context)),
                   const Divider(),
                   SizedBox(height: DSizes.spaceBtwSections(context)),
+                  const CustomerReview(),
                 ],
               ),
             ),
