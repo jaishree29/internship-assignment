@@ -1,7 +1,7 @@
 import 'package:e_comm_demo/utils/image_strings.dart';
 import 'package:e_comm_demo/utils/sizes.dart';
 import 'package:e_comm_demo/widgets/review_item.dart';
-import 'package:e_comm_demo/widgets/review_modal.dart';
+import 'package:e_comm_demo/models/review_modal.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -21,7 +21,7 @@ class CustomerReview extends StatelessWidget {
         date: '20th July, 2024',
       ),
       Review(
-        name: 'Sofia',
+        name: 'Esther Howard',
         reviewText:
             'Ut aliquet venenatis elit, at condimentum mi bibendum non. Sed vitae dui quis neque fermentum tincidunt. Quisque id aliquam magna. Proin sit amet sagittis sem...',
         likeCount: 4,
@@ -29,7 +29,7 @@ class CustomerReview extends StatelessWidget {
         date: '20th July, 2024',
       ),
       Review(
-        name: 'Sofia',
+        name: 'Mary Magdalen,',
         reviewText:
             'Ut aliquet venenatis elit, at condimentum mi bibendum non. Sed vitae dui quis neque fermentum tincidunt. Quisque id aliquam magna. Proin sit amet sagittis sem...',
         likeCount: 4,

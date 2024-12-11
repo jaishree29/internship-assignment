@@ -1,10 +1,12 @@
-import 'package:e_comm_demo/widgets/customer_review.dart';
-import 'package:e_comm_demo/widgets/ratings.dart';
+import 'package:e_comm_demo/models/grid_item.dart';
+import 'package:e_comm_demo/sections/customer_review.dart';
+import 'package:e_comm_demo/sections/image_grid_section.dart';
+import 'package:e_comm_demo/sections/ratings.dart';
 import 'package:e_comm_demo/utils/colors.dart';
 import 'package:e_comm_demo/utils/image_strings.dart';
 import 'package:e_comm_demo/utils/sizes.dart';
-import 'package:e_comm_demo/widgets/bottom_bar.dart';
-import 'package:e_comm_demo/widgets/color_and_size_selector.dart';
+import 'package:e_comm_demo/sections/bottom_bar.dart';
+import 'package:e_comm_demo/sections/color_and_size_selector.dart';
 import 'package:e_comm_demo/widgets/image_carousel.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -22,14 +24,68 @@ class Homapage extends StatelessWidget {
     ];
 
     final List<String> reviewImages = [
-      DImages.dressImage_2,
-      DImages.dressImage_3,
-      DImages.dressImage_5,
-      DImages.dressImage_6,
       DImages.dressImage_7,
       DImages.dressImage_8,
       DImages.dressImage_9,
       DImages.dressImage_10,
+      DImages.dressImage_6,
+      DImages.dressImage_2,
+      DImages.dressImage_3,
+      DImages.dressImage_5,
+      DImages.dressImage_1,
+    ];
+
+    final List<GridItem> gridItems = [
+      GridItem(
+        image: reviewImages[0],
+        heading: '₹1190',
+        subHeading: 'Rose Corset',
+      ),
+      GridItem(
+        image: reviewImages[1],
+        heading: '₹1190',
+        subHeading: 'Rose Corset',
+      ),
+      GridItem(
+        image: reviewImages[2],
+        heading: '₹1190',
+        subHeading: 'Rose Corset',
+      ),
+      GridItem(
+        image: reviewImages[3],
+        heading: '₹1190',
+        subHeading: 'Rose Corset',
+      ),
+      GridItem(
+        image: reviewImages[1],
+        heading: '₹1190',
+        subHeading: 'Rose Corset',
+      ),
+      GridItem(
+        image: reviewImages[2],
+        heading: '₹1190',
+        subHeading: 'Rose Corset',
+      ),
+      GridItem(
+        image: reviewImages[3],
+        heading: '₹1190',
+        subHeading: 'Rose Corset',
+      ),
+      GridItem(
+        image: reviewImages[0],
+        heading: '₹1190',
+        subHeading: 'Rose Corset',
+      ),
+      GridItem(
+        image: reviewImages[2],
+        heading: '₹1190',
+        subHeading: 'Rose Corset',
+      ),
+      GridItem(
+        image: reviewImages[1],
+        heading: '₹1190',
+        subHeading: 'Rose Corset',
+      ),
     ];
 
     final TextEditingController pincode = TextEditingController();
@@ -419,6 +475,51 @@ class Homapage extends StatelessWidget {
                   const Divider(),
                   SizedBox(height: DSizes.spaceBtwSections(context)),
                   const CustomerReview(),
+                  Center(
+                    child: Container(
+                      height: DSizes.buttonHeight(context),
+                      width: DSizes.smallContainerWidth(context),
+                      margin: EdgeInsets.only(left: DSizes.sm(context)),
+                      decoration: BoxDecoration(
+                          color: Colors.white,
+                          border: Border.all(
+                            color: Colors.black,
+                            width: 2,
+                          ),
+                          borderRadius: const BorderRadius.all(Radius.zero)),
+                      child: Center(
+                        child: Text(
+                          'See All Reviews',
+                          style: GoogleFonts.poppins(
+                            color: Colors.black,
+                            fontSize: DSizes.fontSizeMd(context),
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                  SizedBox(height: DSizes.spaceBtwSections(context)),
+                  const Divider(),
+                  SizedBox(height: DSizes.spaceBtwSections(context)),
+                  Align(
+                    alignment: Alignment.center,
+                    child: Text(
+                      'You Might Also Like',
+                      style: GoogleFonts.dmSerifDisplay(
+                        color: Colors.black,
+                        fontSize: DSizes.fontSizeXLg(context),
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
+                  ),
+                  SizedBox(height: DSizes.spaceBtwItems(context)),
+                  const Divider(
+                    color: DColors.primary,
+                  ),
+                  SizedBox(height: DSizes.spaceBtwSections(context)),
+                  ImageGridSection(items: gridItems),
+                  SizedBox(height: DSizes.spaceBtwSections(context)),
                 ],
               ),
             ),

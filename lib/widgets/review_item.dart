@@ -1,6 +1,6 @@
 import 'package:e_comm_demo/utils/colors.dart';
 import 'package:e_comm_demo/utils/sizes.dart';
-import 'package:e_comm_demo/widgets/review_modal.dart';
+import 'package:e_comm_demo/models/review_modal.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -82,7 +82,7 @@ class ReviewItem extends StatelessWidget {
             ),
           ),
         review.images == null
-            ? SizedBox(
+            ? const SizedBox(
                 height: 0,
               )
             : SizedBox(height: DSizes.spaceBtwSections(context)),

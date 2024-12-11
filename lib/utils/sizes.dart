@@ -20,6 +20,9 @@ class DSizes {
   static double xxl(BuildContext context) => screenWidth(context) * 0.11;
   static double xxxl(BuildContext context) => screenWidth(context) * 0.13;
 
+  //Grid Item size
+  static double gridHeight(BuildContext context) => screenWidth(context) * 0.456;
+
   // Icon Sizes
   static double iconXs(BuildContext context) => screenWidth(context) * 0.03;
   static double iconSm(BuildContext context) => screenWidth(context) * 0.05;
